@@ -17,6 +17,8 @@ public class DecomposingMoney {
 			JOptionPane.showMessageDialog(null, "The amount you entered is equal to :\n" + "$ " +benjamins+" Benjamins\n"+"$ " +sawbucks+" sawbucks\n"+"$ " +bucks+" bucks");
 		}else if (x>=1000 && x<10000) {
 			JOptionPane.showMessageDialog(null, "The amount you entered is equal to :\n" + "$ " +grands+" grands\n"+"$ " +benjamins+" Benjamins\n"+"$ " +sawbucks +" sawbucks\n"+"$ " +bucks+" bucks");
+		}else {
+			JOptionPane.showMessageDialog(null, "Number out of 1 to 9999 !");
 		}
 	}
 }
