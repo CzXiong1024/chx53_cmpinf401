@@ -1,4 +1,4 @@
-package chx53_Assignment1;
+package lab2;
 
 import javax.swing.JOptionPane;
 
