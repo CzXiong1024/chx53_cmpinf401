@@ -1,7 +1,7 @@
 package chx53_Assignment1;
 
 import javax.swing.JOptionPane;
-public class AreaAndPerimeterOfACircle {
+public class Lab2_Problem2 {
 	public static void main(String[] args) {
 		final double PI = 3.1415926;
 		double r = Double.parseDouble(JOptionPane.showInputDialog("Please enter the radius of a circle "));

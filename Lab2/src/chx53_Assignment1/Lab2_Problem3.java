@@ -2,7 +2,7 @@ package chx53_Assignment1;
 
 import javax.swing.JOptionPane;
 
-public class DecomposingMoney {
+public class Lab2_Problem3 {
 	public static void main(String[] args) {
 		int x = Integer.parseInt(JOptionPane.showInputDialog("Please enter an Integer representing an amount of money from 1 dollar to 9999 dollars:"));
 		int grands = x/1000;
