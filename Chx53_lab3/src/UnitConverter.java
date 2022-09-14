@@ -8,20 +8,24 @@ public class UnitConverter {
 		String input = null;
 		String output = null;
 		while(flag) {
-			input = JOptionPane.showInputDialog("This is a unit converter(enter \"-1\" to exit)\nThe content format should be like: number+\" \"+a unit of measurement!\nPlease type in what you want to convert:");
-			if(input.equals("-1")) {
+			input = JOptionPane.showInputDialog("This is a unit converter(enter \"-1\" to exit)"
+					+ "\nThe content format should be like: number+\" \"+a unit of measurement!"
+					+ "\nPlease type in what you want to convert:");
+			if(input.equals("-1")||input==null||input.equals("")) {
 				System.exit(0);
 			}
 			int s = input.indexOf(" ");
 			if (s == -1) {
 				JOptionPane.showMessageDialog(null, "the content or format you entered is incorrect, please re-enter!");
 			}else {
-				double num = Double.valueOf(input.substring(0, s));
+				double num = Double.parseDouble(input.substring(0, s));
 				String unit = input.substring(s+1, input.length());
-				if (unit.equalsIgnoreCase("cm")||unit.equalsIgnoreCase("in")||unit.equalsIgnoreCase("yd")||unit.equalsIgnoreCase("m")) {
+				if (unit.equalsIgnoreCase("cm")||unit.equalsIgnoreCase("in")
+						||unit.equalsIgnoreCase("yd")||unit.equalsIgnoreCase("m")) {
 					output = lenthUnitConvertion(num,unit);
 					flag = false;
-				}else if (unit.equalsIgnoreCase("oz")||unit.equalsIgnoreCase("gm")||unit.equalsIgnoreCase("kg")||unit.equalsIgnoreCase("lb")||unit.equalsIgnoreCase("g")) {
+				}else if (unit.equalsIgnoreCase("oz")||unit.equalsIgnoreCase("gm")
+						||unit.equalsIgnoreCase("kg")||unit.equalsIgnoreCase("lb")||unit.equalsIgnoreCase("g")) {
 					output = massUnitConvertion(num,unit);
 					flag = false;
 				}else {
