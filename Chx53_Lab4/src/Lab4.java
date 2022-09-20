@@ -9,24 +9,36 @@ public class Lab4 {
 		while(flag) {
 			String inputX = JOptionPane.showInputDialog("Please enter integer number X as the log(X>0):\n" 
 					+ "ps:enter 'exit' to exit the program");
-			if(inputX.equalsIgnoreCase("exit")) {
+			if(inputX==null||inputX.equals("")||inputX.equalsIgnoreCase("exit")) {
 				flag = false;
+				continue;
+			}
+			if(!checkInteger(inputX)){
+				JOptionPane.showMessageDialog(null, "Invalid format or range!!\n"
+						+ "Please re-enter the correct positive interger numbers");
+				continue;
+			}
+			int x = Integer.valueOf(inputX);
+			if(x<=0) {
+				JOptionPane.showMessageDialog(null, "Invalid format or range!!\n"
+						+ "Please re-enter the correct positive interger numbers");
 				continue;
 			}
 			String inputB = JOptionPane.showInputDialog("Please enter integer number b as the base(b>1):\n" 
 					+ "ps:enter 'exit' to exit the program");
-			if(inputB.equalsIgnoreCase("exit")) {
+			if(inputB==null||inputB.equals("")||inputB.equalsIgnoreCase("exit")) {
 				flag = false;
 				continue;
 			}
-			if(!checkInteger(inputX)||!checkInteger(inputB)){
-				JOptionPane.showMessageDialog(null, "Wrong format or range!!\nPlease re-enter the correct positive interger numbers");
+			if(!checkInteger(inputB)){
+				JOptionPane.showMessageDialog(null, "Invalid format or range!!\n"
+						+ "Please re-enter the correct positive interger numbers");
 				continue;
 			}
-			int x = Integer.valueOf(inputX);
 			int b = Integer.valueOf(inputB);
-			if(!checkXandBRange(x,b)) {
-				JOptionPane.showMessageDialog(null, "Wrong range!!\nPlease re-enter the correct positive interger numbers.\n"
+			if(b<=1) {
+				JOptionPane.showMessageDialog(null, "Invalid range!!\n"
+						+ "Please re-enter the correct positive interger numbers.\n"
 						+ "Notice that x must greater than 0 and b must greater than 1!!");
 				continue;
 			}else {
@@ -35,7 +47,7 @@ public class Lab4 {
 				String nextInput = JOptionPane.showInputDialog("Do you wish another logarithm calculation? "
 						+ "Type 'yes' to do another one.\n"
 						+ "Otherwise the program is going to exit!");
-				if(nextInput.equalsIgnoreCase("yes")) {
+				if(nextInput==null||nextInput.equals("")||nextInput.equalsIgnoreCase("yes")) {
 					continue;
 				}else {
 					flag = false;
@@ -68,10 +80,6 @@ public class Lab4 {
 		return true;
 	}
 	
-	public static boolean checkXandBRange(int x, int b) {
-		if(x>0&&b>1) {
-			return true;
-		}
-		return false;
-	}
+	
+	
 }
