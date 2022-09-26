@@ -10,6 +10,7 @@ public class Lab5 {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
+		Random r = new Random();
 		while(true) {
 			String input = JOptionPane.showInputDialog("Please enter a positive Integer n to indicate "
 					+ "the number of times \nyou want to roll the two dices:\nn=:");
@@ -22,11 +23,10 @@ public class Lab5 {
 				JOptionPane.showMessageDialog(null, "please enter an interger greater than 0!");
 				continue;
 			}
-			Random r = new Random();
 			rollDice(n,r);
 			String ask = JOptionPane.showInputDialog("Do you wish another round of roll?\n"
-					+ "Enter 'yes' to restart, enter any other to exit!");
-			if(!ask.equalsIgnoreCase("yes")||ask==null||ask.equals("")) {
+					+ "Enter 'yes' or '1' to restart, enter any other to exit!");
+			if(!ask.equalsIgnoreCase("yes")&&!ask.equals("1")||ask==null||ask.equals("")) {
 				System.out.print("ByeBye~~!");
 				break;
 			}
