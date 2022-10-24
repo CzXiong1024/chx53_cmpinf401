@@ -72,7 +72,7 @@ public class Lab7 {
 		char[] inChar = in.toCharArray();
 		for(char i : inChar) {
 			int num = (int) i ;
-			if(num<48||num>57) {
+			if(num<49||num>57) {
 				return false;
 			}
 		}
