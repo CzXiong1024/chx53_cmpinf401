@@ -29,6 +29,8 @@ public class FileManager {
 			en.setCalories(Integer.parseInt(box[2]));
 			enArr.add(en);
 		}
+		bf.close();
+		fr.close();
 		return enArr;
 	}
 	/**
@@ -50,6 +52,8 @@ public class FileManager {
 			en.setCalories(Integer.parseInt(box[2]));
 			sidesArr.add(en);
 		}
+		bf.close();
+		fr.close();
 		return sidesArr;
 	}
 	/**
@@ -71,6 +75,8 @@ public class FileManager {
 			en.setCalories(Integer.parseInt(box[2]));
 			saladsArr.add(en);
 		}
+		bf.close();
+		fr.close();
 		return saladsArr;
 	}
 	/**
@@ -92,6 +98,8 @@ public class FileManager {
 			en.setCalories(Integer.parseInt(box[2]));
 			desArr.add(en);
 		}
+		bf.close();
+		fr.close();
 		return desArr;
 	}
 }
