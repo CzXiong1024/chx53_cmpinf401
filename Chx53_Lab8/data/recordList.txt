@@ -1,0 +1,8 @@
+bagdf,0.5
+king,1.0
+steve,2.0
+kingking,2.0
+better,5.0
+bufds,10.0
+harword,50.0
+nothinggerea,100.0

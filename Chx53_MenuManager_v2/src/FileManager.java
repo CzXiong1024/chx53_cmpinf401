@@ -24,10 +24,15 @@ public class FileManager {
 		while((line = bf.readLine()) != null) {
 			Entree en = new Entree();
 			String[] box = line.split("@@");
-			en.setName(box[0]);
-			en.setDescription(box[1]);
-			en.setCalories(Integer.parseInt(box[2]));
-			enArr.add(en);
+			if(box.length==3) {
+				en.setName(box[0]);
+				en.setDescription(box[1]);
+				en.setCalories(Integer.parseInt(box[2]));
+				enArr.add(en);
+			}else {
+				System.out.println("Data exception. Please check your data file");
+			}
+			
 		}
 		bf.close();
 		fr.close();
