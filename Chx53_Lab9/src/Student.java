@@ -5,6 +5,7 @@ public class Student extends Person{
 	private double fee;
 	
 	public Student(String name, String address, String program, int year, double fee) {
+		super();
 		this.setName(name);
 		this.setAddress(address);
 		this.program = program;

@@ -3,6 +3,7 @@ public class Staff extends Person{
 	private String school;
 	private double pay;
 	public Staff(String name, String address, double pay) {
+		super();
 		this.setName(name);
 		this.setAddress(address);
 		this.pay = pay;
