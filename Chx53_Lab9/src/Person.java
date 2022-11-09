@@ -1,7 +1,7 @@
 
 public abstract class Person {
-	private String name;
-	private String address = "String";
+	protected String name;
+	protected String address = "String";
 	/**
 	 * @return the name
 	 */

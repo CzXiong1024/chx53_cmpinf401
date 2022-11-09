@@ -16,26 +16,33 @@ public class FileManager {
 	 * @return an ArrayList containing a set of entrees read from the file
 	 * @throws Exception
 	 */
-	public static ArrayList<Entree> readEntrees(String fileName) throws Exception {
+	public static ArrayList<Entree> readEntrees(String fileName) {
 		ArrayList<Entree> enArr = new ArrayList();
-		FileReader fr = new FileReader(fileName);
-		BufferedReader bf = new BufferedReader(fr);
-		String line = null;
-		while((line = bf.readLine()) != null) {
-			Entree en = new Entree();
-			String[] box = line.split("@@");
-			if(box.length==3) {
-				en.setName(box[0]);
-				en.setDescription(box[1]);
-				en.setCalories(Integer.parseInt(box[2]));
-				enArr.add(en);
-			}else {
-				System.out.println("Data exception. Please check your data file");
+		FileReader fr;
+		try {
+			fr = new FileReader(fileName);
+			BufferedReader bf = new BufferedReader(fr);
+			String line = null;
+			while((line = bf.readLine()) != null) {
+				Entree en = new Entree();
+				String[] box = line.split("@@");
+				if(box.length==3) {
+					en.setName(box[0]);
+					en.setDescription(box[1]);
+					en.setCalories(Integer.parseInt(box[2]));
+					enArr.add(en);
+				}else {
+					System.out.println("Data exception. Please check your data file");
+				}
+				
 			}
-			
+			bf.close();
+			fr.close();
+		} catch (Exception e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
 		}
-		bf.close();
-		fr.close();
+		
 		return enArr;
 	}
 	/**
