@@ -16,15 +16,15 @@ public class MenuTester {
 		ArrayList<Menu> menus = new ArrayList<>();
 		for (int i = 1; i <= 8; i++) {
 			Menu myMenu = manager.randomMenu("Random Menu No. " + i);
-			System.out.println(myMenu.toString() + myMenu.description() + "\tTotal calories: " + myMenu.totalCalories()
+			System.out.println(myMenu.toString() + myMenu.description() + "Total calories: " + myMenu.totalCalories()
 					+ "\nTotal price: " + myMenu.totalPrice());
 			menus.add(myMenu);
 		}
 		Menu minCalMenu = manager.minCaloriesMenu("Menu with Minimum Calories");
 		Menu maxCalMenu = manager.maxCaloriesMenu("Menu with Maximum Calories");
-		System.out.println(minCalMenu.toString() + minCalMenu.description() + "\tTotal calories: "
+		System.out.println(minCalMenu.toString() + minCalMenu.description() + "Total calories: "
 				+ minCalMenu.totalCalories() + "\nTotal price: " + minCalMenu.totalPrice());
-		System.out.println(maxCalMenu.toString() + maxCalMenu.description() + "\tTotal calories: "
+		System.out.println(maxCalMenu.toString() + maxCalMenu.description() + "Total calories: "
 				+ maxCalMenu.totalCalories() + "\nTotal price: " + maxCalMenu.totalPrice());
 		menus.add(minCalMenu);
 		menus.add(maxCalMenu);

@@ -1,51 +1,51 @@
 ======================Random Menu No. 1========================
 Entree: Griller SteakCarefully selected prime quality steak griller to the point of your preference. Calories: 740 Price: 15.0
-Side: QuinoaQuinoa. Calories: 140 Price: 4.7
+Side: Grilled PotatoesBoiled potatoes grilled in oven with a touch of butter. Calories: 270 Price: 5.0
 Salad: Potato SaladPotato Salad. Calories: 195 Price: 4.0
-Dessert: Fruit SaladOranges, bananas, apples, grapes, strawberries. Calories: 200 Price: 5.0
-Menu Total Calories: 1275	Menu Total Price: 28.7
+Dessert: Ice CreamChoose among vanilla, mango, pineapple, chocolate and orange ice cream. Calories: 250 Price: 3.2
+Menu Total Calories: 1455	Menu Total Price: 27.2
 ======================Random Menu No. 2========================
-Entree: Deep fried chicken breastsDeep fried chicken breasts using our traditional powder receipt. Calories: 560 Price: 12.0
-Side: QuinoaQuinoa. Calories: 140 Price: 4.7
+Entree: Griller SteakCarefully selected prime quality steak griller to the point of your preference. Calories: 740 Price: 15.0
+Side: RicePlain rice. Calories: 160 Price: 3.5
 Salad: Potato SaladPotato Salad. Calories: 195 Price: 4.0
-Dessert: Ice CreamChoose among vanilla, mango, pineapple, chocolate and orange ice cream. Calories: 250 Price: 3.2
-Menu Total Calories: 1145	Menu Total Price: 23.9
+Dessert: Chocolate CakeLow calorie chocolate cake. Calories: 175 Price: 7.0
+Menu Total Calories: 1270	Menu Total Price: 29.5
 ======================Random Menu No. 3========================
-Entree: Deep fried chicken breastsDeep fried chicken breasts using our traditional powder receipt. Calories: 560 Price: 12.0
-Side: QuinoaQuinoa. Calories: 140 Price: 4.7
-Salad: Potato SaladPotato Salad. Calories: 195 Price: 4.0
-Dessert: Ice CreamChoose among vanilla, mango, pineapple, chocolate and orange ice cream. Calories: 250 Price: 3.2
-Menu Total Calories: 1145	Menu Total Price: 23.9
-======================Random Menu No. 4========================
-Entree: Sirloin SteakA delicious piece of 1/2 a pound of our carefully selected meat grilled and seasoned. Choose how much you want it cooked. Calories: 820 Price: 22.5
-Side: Grilled PotatoesBoiled potatoes grilled in oven with a touch of butter. Calories: 270 Price: 5.0
-Salad: Potato SaladPotato Salad. Calories: 195 Price: 4.0
-Dessert: Chocolate CakeLow calorie chocolate cake. Calories: 175 Price: 7.0
-Menu Total Calories: 1460	Menu Total Price: 38.5
-======================Random Menu No. 5========================
-Entree: Deep fried chicken breastsDeep fried chicken breasts using our traditional powder receipt. Calories: 560 Price: 12.0
-Side: Grilled PotatoesBoiled potatoes grilled in oven with a touch of butter. Calories: 270 Price: 5.0
-Salad: Potato SaladPotato Salad. Calories: 195 Price: 4.0
-Dessert: Chocolate CakeLow calorie chocolate cake. Calories: 175 Price: 7.0
-Menu Total Calories: 1200	Menu Total Price: 28.0
-======================Random Menu No. 6========================
 Entree: Curry ChickenCurry marinated chicken, cooked slowly in wood fire oven. Calories: 430 Price: 11.5
-Side: QuinoaQuinoa. Calories: 140 Price: 4.7
-Salad: Potato SaladPotato Salad. Calories: 195 Price: 4.0
+Side: Grilled PotatoesBoiled potatoes grilled in oven with a touch of butter. Calories: 270 Price: 5.0
+Salad: QuinoaQuinoa lightly salted. Calories: 120 Price: 4.0
+Dessert: Fruit SaladOranges, bananas, apples, grapes, strawberries. Calories: 200 Price: 5.0
+Menu Total Calories: 1020	Menu Total Price: 25.5
+======================Random Menu No. 4========================
+Entree: Curry ChickenCurry marinated chicken, cooked slowly in wood fire oven. Calories: 430 Price: 11.5
+Side: Grilled PotatoesBoiled potatoes grilled in oven with a touch of butter. Calories: 270 Price: 5.0
+Salad: Soy bean sprout with cornSoy bean sprout with corn and olives. Calories: 210 Price: 5.0
 Dessert: Chocolate CakeLow calorie chocolate cake. Calories: 175 Price: 7.0
-Menu Total Calories: 940	Menu Total Price: 27.2
+Menu Total Calories: 1085	Menu Total Price: 28.5
+======================Random Menu No. 5========================
+Entree: Sirloin SteakA delicious piece of 1/2 a pound of our carefully selected meat grilled and seasoned. Choose how much you want it cooked. Calories: 820 Price: 22.5
+Side: QuinoaQuinoa. Calories: 140 Price: 4.7
+Salad: Mixed VegetablesIncludes small tomatoes, lettuce, cucumber, spinach and arugula. Calories: 90 Price: 7.0
+Dessert: Chocolate CakeLow calorie chocolate cake. Calories: 175 Price: 7.0
+Menu Total Calories: 1225	Menu Total Price: 41.2
+======================Random Menu No. 6========================
+Entree: Griller SteakCarefully selected prime quality steak griller to the point of your preference. Calories: 740 Price: 15.0
+Side: Grilled PotatoesBoiled potatoes grilled in oven with a touch of butter. Calories: 270 Price: 5.0
+Salad: QuinoaQuinoa lightly salted. Calories: 120 Price: 4.0
+Dessert: Ice CreamChoose among vanilla, mango, pineapple, chocolate and orange ice cream. Calories: 250 Price: 3.2
+Menu Total Calories: 1380	Menu Total Price: 27.2
 ======================Random Menu No. 7========================
 Entree: Sirloin SteakA delicious piece of 1/2 a pound of our carefully selected meat grilled and seasoned. Choose how much you want it cooked. Calories: 820 Price: 22.5
 Side: RicePlain rice. Calories: 160 Price: 3.5
-Salad: Soy bean sprout with cornSoy bean sprout with corn and olives. Calories: 210 Price: 5.0
-Dessert: Fruit SaladOranges, bananas, apples, grapes, strawberries. Calories: 200 Price: 5.0
-Menu Total Calories: 1390	Menu Total Price: 36.0
-======================Random Menu No. 8========================
-Entree: Griller SteakCarefully selected prime quality steak griller to the point of your preference. Calories: 740 Price: 15.0
-Side: QuinoaQuinoa. Calories: 140 Price: 4.7
-Salad: Potato SaladPotato Salad. Calories: 195 Price: 4.0
+Salad: QuinoaQuinoa lightly salted. Calories: 120 Price: 4.0
 Dessert: Chocolate CakeLow calorie chocolate cake. Calories: 175 Price: 7.0
-Menu Total Calories: 1250	Menu Total Price: 30.7
+Menu Total Calories: 1275	Menu Total Price: 37.0
+======================Random Menu No. 8========================
+Entree: Curry ChickenCurry marinated chicken, cooked slowly in wood fire oven. Calories: 430 Price: 11.5
+Side: Grilled PotatoesBoiled potatoes grilled in oven with a touch of butter. Calories: 270 Price: 5.0
+Salad: Potato SaladPotato Salad. Calories: 195 Price: 4.0
+Dessert: Ice CreamChoose among vanilla, mango, pineapple, chocolate and orange ice cream. Calories: 250 Price: 3.2
+Menu Total Calories: 1145	Menu Total Price: 23.7
 ======================Menu with Minimum Calories========================
 Entree: Curry ChickenCurry marinated chicken, cooked slowly in wood fire oven. Calories: 430 Price: 11.5
 Side: QuinoaQuinoa. Calories: 140 Price: 4.7
