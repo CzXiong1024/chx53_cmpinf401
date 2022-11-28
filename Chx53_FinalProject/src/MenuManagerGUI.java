@@ -88,7 +88,6 @@ public class MenuManagerGUI {
 		this.pnlBUOM.add(cboDessert);
 		this.pnlBUOM.add(btnCreateMenu);
 
-
 		//create the buttons for the panel of "Or generate a Menu"
 		this.btnGenerateRandom = new JButton("Generate a Random Menu");
 		btnGenerateRandom.setBounds(btnCreateMenu.getX(),lblEntree.getY(),btnCreateMenu.getWidth(),btnCreateMenu.getHeight());
