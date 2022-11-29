@@ -2,19 +2,24 @@
 public class Lab10 {
 
 	public static void main(String[] args) {
+		
+		System.out.println("==============================================");
 		System.out.println("Test for Taks1 (method of sumOfDigits):");
 		int x = -12345;
 		int output = sumOfDigits(x);
-		System.out.println("Output for num "+x+" is: "+output);
+		System.out.println("For num: "+x+" \nOutput is: "+output);
+		
 		System.out.println("==============================================");
 		System.out.println("Test for Taks2 (method of printArrayElements):");
 		int[] a = {1,2,3,4,5,6,7,8,9};
 		System.out.println("Output for task2:");
 		printArrayElements(a,0);
+		
 		System.out.println("==============================================");
 		System.out.println("Test for Taks3 (method of printCombos):");
 		int[] b = {2,3,5,7,10};
 		printCombos(b,"",0,3);
+		
 	}
 	
 	//method for task 1
