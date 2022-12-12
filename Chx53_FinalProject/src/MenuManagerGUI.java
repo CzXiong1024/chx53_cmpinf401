@@ -59,12 +59,16 @@ public class MenuManagerGUI {
 
 		//combo box generated here
 		this.cboEntree = new JComboBox(menuManager.getEntrees().toArray());
+		this.cboEntree.addItem("None");
 		cboEntree.setBounds(lblEntree.getX()+lblEntree.getWidth()+10,lblEntree.getY(),200,30);
 		this.cboSide = new JComboBox(menuManager.getSides().toArray());
+		this.cboSide.addItem("None");
 		cboSide.setBounds(lblSide.getX()+lblSide.getWidth()+10,lblSide.getY(),cboEntree.getWidth(),cboEntree.getHeight());
 		this.cboSalad = new JComboBox(menuManager.getSalads().toArray());
+		this.cboSalad.addItem("None");
 		cboSalad.setBounds(lblSalad.getX()+lblSalad.getWidth()+10,lblSalad.getY(),cboEntree.getWidth(),cboEntree.getHeight());
 		this.cboDessert = new JComboBox(menuManager.getDesserts().toArray());
+		this.cboDessert.addItem("None");
 		cboDessert.setBounds(lblDessert.getX()+lblDessert.getWidth()+10,lblDessert.getY(),cboEntree.getWidth(),cboEntree.getHeight());
 
 
@@ -152,10 +156,10 @@ public class MenuManagerGUI {
 					JOptionPane.showMessageDialog(null, "You have to name the menu before creating it!");
 					return;
 				}
-				Entree entree = (Entree) cboEntree.getSelectedItem();
-				Side side = (Side) cboSide.getSelectedItem();
-				Salad salad = (Salad) cboSalad.getSelectedItem();
-				Dessert dessert = (Dessert) cboDessert.getSelectedItem();
+				Entree entree = cboEntree.getSelectedItem() == "None"? null:(Entree) cboEntree.getSelectedItem();
+				Side side = cboSide.getSelectedItem() == "None"? null:(Side) cboSide.getSelectedItem();
+				Salad salad = cboSalad.getSelectedItem() == "None"? null:(Salad) cboSalad.getSelectedItem();
+				Dessert dessert = cboDessert.getSelectedItem() == "None"? null:(Dessert) cboDessert.getSelectedItem();
 				Menu menu = new Menu(ownMenuName,entree,side,salad,dessert);
 				menus.add(menu);
 				menuModel.addElement(menu.getName());
@@ -267,8 +271,13 @@ public class MenuManagerGUI {
 		lblChildEntree.setBounds(40,30,lblEntree.getWidth()+30,lblEntree.getHeight());
 
 		txtEntree = new JTextArea();
-		String entreeString = menu.getEntree().getName()+"\n"+menu.getEntree().getDescription()
-				+".\nCalories: "+menu.getEntree().getCalories()+"\nPrice: "+menu.getEntree().getPrice();
+		String entreeString = "";
+		if(menu.getEntree() != null) {
+			entreeString = menu.getEntree().getName()+"\n"+menu.getEntree().getDescription()
+					+".\nCalories: "+menu.getEntree().getCalories()+"\nPrice: "+menu.getEntree().getPrice();
+		}else {
+			entreeString = "N/A";
+		}
 		txtEntree = new JTextArea(entreeString);
 		txtEntree.setBorder(BorderFactory.createLineBorder(Color.BLACK));
 		txtEntree.setLineWrap(true);
@@ -284,8 +293,13 @@ public class MenuManagerGUI {
 				lblChildEntree.getWidth(),lblChildEntree.getHeight());
 
 		txtSide = new JTextArea();
-		String sideString = menu.getSide().getName()+"\n"+menu.getSide().getDescription()
-				+".\nCalories: "+menu.getSide().getCalories()+"\nPrice: "+menu.getSide().getPrice();
+		String sideString = "";
+		if(menu.getSide()!=null) {
+			sideString = menu.getSide().getName()+"\n"+menu.getSide().getDescription()
+					+".\nCalories: "+menu.getSide().getCalories()+"\nPrice: "+menu.getSide().getPrice();
+		}else {
+			sideString = "N/A";
+		}
 		txtSide = new JTextArea(sideString);
 		txtSide.setBorder(BorderFactory.createLineBorder(Color.BLACK));
 		txtSide.setLineWrap(true);
@@ -299,8 +313,13 @@ public class MenuManagerGUI {
 				lblChildSide.getWidth(),lblChildSide.getHeight());
 
 		txtSalad = new JTextArea();
-		String saladString = menu.getSalad().getName()+"\n"+menu.getSalad().getDescription()
-				+".\nCalories: "+menu.getSalad().getCalories()+"\nPrice: "+menu.getSalad().getPrice();
+		String saladString = "";
+		if(menu.getSalad()!=null) {
+			saladString = menu.getSalad().getName()+"\n"+menu.getSalad().getDescription()
+					+".\nCalories: "+menu.getSalad().getCalories()+"\nPrice: "+menu.getSalad().getPrice();
+		}else {
+			saladString = "N/A";
+		}
 		txtSalad = new JTextArea(saladString);
 		txtSalad.setBorder(BorderFactory.createLineBorder(Color.BLACK));
 		txtSalad.setLineWrap(true);
@@ -314,8 +333,13 @@ public class MenuManagerGUI {
 				lblChildSalad.getWidth(),lblChildSalad.getHeight());
 
 		txtDessert = new JTextArea();
-		String dessertString = menu.getDessert().getName()+"\n"+menu.getDessert().getDescription()
-				+".\nCalories: "+menu.getDessert().getCalories()+"\nPrice: "+menu.getDessert().getPrice();
+		String dessertString = "";
+		if(menu.getDessert()!=null) {
+			dessertString = menu.getDessert().getName()+"\n"+menu.getDessert().getDescription()
+					+".\nCalories: "+menu.getDessert().getCalories()+"\nPrice: "+menu.getDessert().getPrice();
+		}else {
+			dessertString = "N/A";
+		}
 		txtDessert = new JTextArea(dessertString);
 		txtDessert.setBorder(BorderFactory.createLineBorder(Color.BLACK));
 		txtDessert.setLineWrap(true);
